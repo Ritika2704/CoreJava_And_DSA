@@ -30,9 +30,11 @@ public class SynchronizationDemo2 {
     public static void main(String[] args) {
         Sender send = new Sender();
         ThreadSend s1 = new ThreadSend(" Hi ", send);
+        Thread s3= new ThreadSend("wating", send);
         ThreadSend s2 = new ThreadSend(" bye ", send);
 
         s1.start();
+        s3.start();
         s2.start();
 
         try{
