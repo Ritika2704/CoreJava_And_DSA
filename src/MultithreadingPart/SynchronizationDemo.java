@@ -17,7 +17,8 @@ class MyThread1 extends Thread{
     table t;
     MyThread1 (table t){
         this.t = t;
-    }public void run(){
+    }
+    public void run(){
         t.printTable(5);
     }
 }
