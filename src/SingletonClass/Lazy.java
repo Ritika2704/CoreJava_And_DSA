@@ -8,7 +8,7 @@ public class  Lazy {
         });
 
         Thread thread2 = new Thread(()-> {
-            DbConnection1 obj = DbConnection1.getInstance();
+            DbConnectionSync obj = DbConnectionSync.getInstance();
             System.out.println("Thread 2: "+ obj);
         });
         thread1.start();
