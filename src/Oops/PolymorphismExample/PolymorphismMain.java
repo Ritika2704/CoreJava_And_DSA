@@ -7,9 +7,13 @@ class Shape{
 class Circle extends Shape{
     @Override
     public void area() {
-        System.out.println();
+        System.out.println("to find area of is pi*r*r");
     }
 }
 
 public class PolymorphismMain {
+    public static void main(String[] args) {
+        Shape s1 = new Circle();
+        s1.area();
+    }
 }
