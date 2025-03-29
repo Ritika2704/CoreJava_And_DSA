@@ -1,6 +1,6 @@
 package Oops;
 
-
+//multiLevel Inheritance
 class Ritika{
     public void friend(){
         System.out.println("I have two friends ");
@@ -20,7 +20,7 @@ class Chris extends Anjali{
 }
 public class Inheritance {
     public static void main(String[] args) {
-       Ritika r = new Anjali();
+       Ritika r = new Anjali();//upcasting
        r.friend();
         Chris riti = new Chris();
         riti.friend();
